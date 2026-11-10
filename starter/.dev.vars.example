@@ -1,0 +1,3 @@
+# Your product's secrets. /ship writes the real file, .dev.vars.
+# Never share .dev.vars: not in chat, not in Skool, not in a screenshot.
+ACCESS_CODE=
