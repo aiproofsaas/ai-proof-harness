@@ -8,6 +8,6 @@ These steps are for Claude Code. The person you're helping doesn't code, so expl
    - Mac: `curl -fsSL https://raw.githubusercontent.com/aiproofsaas/ai-proof-harness/main/install.sh | sh`
    - Windows: `powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/aiproofsaas/ai-proof-harness/main/install.ps1 | iex"`
 
-3. **Tell them it worked.** Say: "Your co-founder's handbook is installed." Show the version line the installer printed.
+3. **Tell them it worked.** Say: "Your co-founder's handbook is installed." Show the version line the installer printed. Then explain what it added in two calm sentences, no more: "It adds a safety check that keeps your secrets in one private file. It also lets me run the Cloudflare and Node tools in this folder without asking you every time." Answer questions if they ask.
 
-4. **Run the setup check.** Run `/setup-check`. If it isn't available yet, say: "Open a new session in this folder, then type /setup-check." Red on Node, Cloudflare, the access code or the live product is normal at this point.
+4. **Run the setup check now.** The new skills only show up as commands in the next session, so don't wait for that. Read `.claude/skills/setup-check/SKILL.md` and follow it exactly, right here. Red on Node, Cloudflare, the access code or the live product is normal at this point. Then say: "From your next session, you can type /setup-check yourself."
