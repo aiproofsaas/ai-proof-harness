@@ -33,7 +33,7 @@ Work out the system first: `uname` works on Mac. On Windows, the shell may be Gi
    - RED if missing or older: "Node not found. Fix: install Node LTS from nodejs.org, then open a new session here."
    - If Node is missing, mark checks 5 to 8 as RED with the fix "Comes after Node." and skip running them.
 
-5. **Cloudflare login.** Run `npx wrangler whoami`.
+5. **Cloudflare login.** Run `npx --yes wrangler whoami`. The `--yes` lets it fetch the Cloudflare tool the first time without asking. It doesn't change this folder.
    - GREEN if it shows an account: "Cloudflare: logged in as <email or account name>."
    - RED if not logged in: "Cloudflare not connected yet. Fix: make a free account at cloudflare.com, then type /ship. It logs you in."
 
